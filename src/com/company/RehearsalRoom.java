@@ -8,10 +8,12 @@ public class RehearsalRoom {
         Bassist bassist = new Bassist("Mel Schacker", "Schacher", "Melvin George");
         Trumpeter trumpeter = new Trumpeter("Louis Armstrong", "Armstrong", "Louis Daniel");
         BackgroundSinger backgroundSinger = new BackgroundSinger("Brittney Westouver", "Westover", "Brittney");
-        machtMusik(singer, guitarrist, bassist, trumpeter, backgroundSinger);
+        makesMusic(singer, guitarrist, bassist, trumpeter, backgroundSinger);
     }
-    public static void machtMusik(Musician... gruppe){
-        for(Musician musician : gruppe){
+
+    // Liste wäre hier besser, da es mehrere Singer,.. geben kann.
+    public static void makesMusic(Musician... gruppe) {
+        for (Musician musician : gruppe) {
             musician.makeMusic();
         }
     }
