@@ -2,8 +2,8 @@ package com.company;
 
 public class Person {
     private String name;
-    private String vorname;
-    private int alter;
+    private String firstName;
+    private int age;
 
     public String getName() {
         return name;
@@ -13,26 +13,26 @@ public class Person {
         this.name = name;
     }
 
-    public String getVorname() {
-        return vorname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setVorname(String vorname) {
-        this.vorname = vorname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public int getAlter() {
-        return alter;
+    public int getAge() {
+        return age;
     }
 
-    public void setAlter(int alter) {
-        this.alter = alter;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public Person(String name, String vorname) {
+    public Person(String name, String firstName) {
         super();
         this.name = name;
-        this.vorname = vorname;
+        this.firstName = firstName;
 
 
     }

@@ -1,12 +1,12 @@
 package com.company;
 
-public class Gitarrist extends Musiker {
-    public Gitarrist(String kuenstlerName, String name, String vorname) {
+public class Guitarrist extends Musician {
+    public Guitarrist(String kuenstlerName, String name, String vorname) {
         super(kuenstlerName, name, vorname);
     }
 
     @Override
-    public void musizieren(){
+    public void makeMusic(){
         System.out.println("Tschiiiiiingzääääääänggggg.");
     }
 }
